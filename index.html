@@ -3,149 +3,262 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Muhammad Abdullah, Electrical Engineering student at UET Lahore.">
-  <title>Muhammad Abdullah | Portfolio</title>
-  <style>
-    :root {
-      --bg: #0f172a;
-      --surface: #1e293b;
-      --text: #e2e8f0;
-      --muted: #94a3b8;
-      --accent: #38bdf8;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    header, section { max-width: 900px; margin: 0 auto; padding: 4rem 1.5rem; }
-    nav {
-      position: sticky; top: 0; background: var(--bg);
-      border-bottom: 1px solid var(--surface);
-      display: flex; justify-content: center; gap: 1.5rem; padding: 1rem;
-      z-index: 10;
-    }
-    nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
-    nav a:hover { color: var(--accent); }
-    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-    h2 { font-size: 1.6rem; margin-bottom: 1.5rem; color: var(--accent); }
-    .subtitle { color: var(--muted); font-size: 1.15rem; }
-    .card {
-      background: var(--surface);
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-bottom: 1.25rem;
-    }
-    .card h3 { margin-bottom: 0.4rem; }
-    .card p { color: var(--muted); }
-    .tags { margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .tags span {
-      font-size: 0.8rem; padding: 0.2rem 0.6rem;
-      border: 1px solid var(--accent); border-radius: 999px; color: var(--accent);
-    }
-    .skills { display: flex; flex-wrap: wrap; gap: 0.6rem; }
-    .skills span {
-      background: var(--surface); padding: 0.4rem 0.9rem; border-radius: 6px; font-size: 0.9rem;
-    }
-    a.link { color: var(--accent); }
-    footer {
-      text-align: center; padding: 2rem; color: var(--muted);
-      border-top: 1px solid var(--surface); font-size: 0.9rem;
-    }
-    @media (max-width: 600px) {
-      h1 { font-size: 2rem; }
-      nav { gap: 1rem; }
-    }
-  </style>
+  <meta name="description" content="Muhammad Abdullah — Artificial Intelligence undergraduate at UET Lahore, interested in AI engineering, software development, and data-driven applications.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Muhammad Abdullah | AI & Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <header id="top">
-    <h1>Muhammad Abdullah</h1>
-    <p class="subtitle">Electrical Engineering Student | University of Engineering and Technology (UET), Lahore</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Muhammad Abdullah home"><span class="brand-mark">MA</span><span>abdullah<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am an Electrical Engineering student at UET Lahore. I enjoy building things that
-      combine hardware and software, and I am currently strengthening my skills in
-      object-oriented programming and artificial intelligence. Replace this paragraph with
-      a short description of your interests and goals.
-    </p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>C++</span>
-      <span>Object-Oriented Programming</span>
-      <span>Python</span>
-      <span>Git and GitHub</span>
-      <span>HTML / CSS / JavaScript</span>
-      <span>Circuit Analysis</span>
-      <!-- Add or remove skills here -->
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="card">
-      <h3>Project Title One</h3>
-      <p>
-        Brief description of what the project does, the problem it solves, and your role in it.
-        Replace this with a real project.
-      </p>
-      <div class="tags">
-        <span>C++</span>
-        <span>OOP</span>
+  <main id="main">
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR LEARNING, COLLABORATION & OPPORTUNITIES</p>
+        <h1>Hi, I'm <span class="gradient-text">Muhammad Abdullah.</span></h1>
+        <h2>Exploring the intersection of <span id="rotating-text">AI and software</span><span class="typing-cursor">|</span></h2>
+        <p class="hero-description">I'm an Artificial Intelligence undergraduate at UET Lahore who enjoys building useful software, experimenting with language models, and turning ideas into working applications.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="button button-secondary" href="mailto:abdullahwasavailable@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <span><i class="meta-icon">⌖</i> Lahore, Pakistan</span>
+          <span><i class="meta-icon">◎</i> BSc Artificial Intelligence</span>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/Abdullahthefirst" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://linkedin.com/in/abdullahthefirst" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="mailto:abdullahwasavailable@gmail.com">Email ↗</a>
+        </div>
       </div>
-      <p style="margin-top: 0.75rem;">
-        <a class="link" href="#" target="_blank" rel="noopener">View on GitHub</a>
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Project Title Two</h3>
-      <p>
-        Brief description of a second project. Mention the tools used and any results or outcomes.
-      </p>
-      <div class="tags">
-        <span>Python</span>
-        <span>Electronics</span>
+      <div class="hero-visual">
+        <div class="visual-glow"></div>
+        <div class="portrait-frame">
+          <img src="self_image.png" alt="Portrait of Muhammad Abdullah" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+          <div class="portrait-fallback" aria-hidden="true">MA</div>
+        </div>
+        <div class="floating-card card-top"><span class="mini-label">FOCUS</span><strong>AI + Software</strong></div>
+        <div class="floating-card card-bottom"><span class="mini-label">CURRENTLY</span><strong>Building & learning <span class="accent">↗</span></strong></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
       </div>
-      <p style="margin-top: 0.75rem;">
-        <a class="link" href="#" target="_blank" rel="noopener">View on GitHub</a>
-      </p>
-    </div>
-  </section>
+      <div class="hero-scroll"><span></span> SCROLL TO EXPLORE</div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      I am open to internships, collaborations, and conversations about engineering and technology.
-    </p>
-    <p style="margin-top: 1rem;">
-      Email: <a class="link" href="mailto:your.email@example.com">your.email@example.com</a><br>
-      GitHub: <a class="link" href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a><br>
-      LinkedIn: <a class="link" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin.com/in/yourusername</a>
-    </p>
-  </section>
+    <section class="section section-muted" id="about">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">01 / ABOUT</p>
+          <h2 class="section-title">Curious by nature.<br><span class="muted-text">Practical by design.</span></h2>
+        </div>
+        <div class="about-copy">
+          <p class="lead">I’m a BSc Artificial Intelligence student at the University of Engineering and Technology, Lahore, with a strong interest in building software that solves practical problems.</p>
+          <p>My interests span Python development, AI and machine learning, large language model applications, data analysis, and full-stack web development. I enjoy learning by building: exploring an idea, understanding the underlying concepts, and shaping them into a usable application.</p>
+          <p>I’m particularly interested in AI engineering, algorithmic problem-solving, and software research and development. Over the long term, I hope to explore AI-assisted security and vulnerability discovery as a graduation capstone direction.</p>
+          <div class="about-facts">
+            <div><strong>4.00</strong><span>Current CGPA</span></div>
+            <div><strong>02</strong><span>Current semester</span></div>
+            <div><strong>UET</strong><span>Lahore, Pakistan</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2026 Muhammad Abdullah. Built with HTML and CSS.</p>
+    <section class="section container" id="skills">
+      <p class="eyebrow">02 / SKILLS & INTERESTS</p>
+      <div class="section-heading">
+        <h2 class="section-title">Tools I use. <span class="muted-text">Ideas I explore.</span></h2>
+        <p class="section-intro">A growing toolkit across programming, data, AI, and application development.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-number">01</div><h3>Programming</h3><div class="tags"><span>C</span><span>C++</span><span>Python</span><span>Java</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div></article>
+        <article class="skill-card"><div class="skill-number">02</div><h3>AI & LLM Applications</h3><div class="tags"><span>LangChain</span><span>OpenAI API</span><span>Google Gemini</span><span>Hugging Face</span><span>Pydantic</span><span>RAG</span><span>FAISS</span></div></article>
+        <article class="skill-card"><div class="skill-number">03</div><h3>Data & Machine Learning</h3><div class="tags"><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Scikit-learn</span><span>Statistics</span></div></article>
+        <article class="skill-card"><div class="skill-number">04</div><h3>Web & Software</h3><div class="tags"><span>Streamlit</span><span>MERN Stack</span><span>Django</span><span>SQL</span><span>MySQL</span><span>SQLite</span><span>SQLAlchemy</span></div></article>
+        <article class="skill-card"><div class="skill-number">05</div><h3>Tools & Workflow</h3><div class="tags"><span>Git</span><span>GitHub</span><span>Docker</span><span>Linux</span><span>Conda</span><span>uv</span><span>VMware</span></div></article>
+        <article class="skill-card interest-card"><div class="skill-number">06</div><h3>Areas of interest</h3><div class="interest-list"><span>AI Engineering</span><span>Agentic AI</span><span>Algorithm Design</span><span>Software R&D</span><span>LLM Systems</span><span>Ethical Cybersecurity</span><span>AI-assisted Security Research</span></div></article>
+      </div>
+      <p class="small-note">Skills and interests reflect my current learning and project experience; I’m continuously developing them.</p>
+    </section>
+
+    <section class="section section-muted" id="projects">
+      <div class="container">
+        <p class="eyebrow">03 / SELECTED WORK</p>
+        <div class="section-heading projects-heading">
+          <h2 class="section-title">Things I've <span class="muted-text">been building.</span></h2>
+          <p class="section-intro">A selection of repositories covering AI applications, data tools, and software development.</p>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Filter projects">
+          <button class="filter-button active" data-filter="all">All projects</button>
+          <button class="filter-button" data-filter="ai">AI & LLM</button>
+          <button class="filter-button" data-filter="software">Software</button>
+          <button class="filter-button" data-filter="data">Data</button>
+          <button class="filter-button" data-filter="web">Web</button>
+        </div>
+        <div class="project-grid" id="project-grid">
+          <article class="project-card" data-category="ai">
+            <div class="project-top"><span class="project-type">AI APPLICATION</span><span class="project-index">01</span></div>
+            <h3>AI Recipe Generator</h3><p>A Streamlit application integrating the Google Gemini API to generate recipe ideas.</p>
+            <div class="project-tags"><span>Python</span><span>Streamlit</span><span>Gemini API</span></div>
+            <a class="project-link" href="https://github.com/Abdullahthefirst/AI_RECIPIE_GENERATOR" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a>
+          </article>
+          <article class="project-card" data-category="ai">
+            <div class="project-top"><span class="project-type">LLM ENGINEERING</span><span class="project-index">02</span></div>
+            <h3>LangChain Chains</h3><p>Explorations and implementations of composable LLM workflows using LangChain.</p>
+            <div class="project-tags"><span>Python</span><span>LangChain</span><span>LLMs</span></div>
+            <a class="project-link" href="https://github.com/Abdullahthefirst/LangChain_Chains" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a>
+          </article>
+          <article class="project-card" data-category="software">
+            <div class="project-top"><span class="project-type">DATABASE APPLICATION</span><span class="project-index">03</span></div>
+            <h3>Job Application Tracker</h3><p>A Python and MySQL project for organizing and tracking job applications.</p>
+            <div class="project-tags"><span>Python</span><span>MySQL</span><span>PyMySQL</span></div>
+            <a class="project-link" href="https://github.com/Abdullahthefirst/JOB_APPLICATION_TRACKER" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a>
+          </article>
+          <article class="project-card" data-category="data">
+            <div class="project-top"><span class="project-type">DATA ANALYSIS</span><span class="project-index">04</span></div>
+            <h3>Data Analyst Jobs Analysis</h3><p>A notebook-based data analysis project exploring job-market data and practicing the data analysis workflow.</p>
+            <div class="project-tags"><span>Python</span><span>Pandas</span><span>Jupyter</span></div>
+            <a class="project-link" href="https://github.com/Abdullahthefirst/DATA_ANALYST_JOBS_ANALYSIS" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a>
+          </article>
+          <article class="project-card" data-category="ai">
+            <div class="project-top"><span class="project-type">STRUCTURED LLM OUTPUTS</span><span class="project-index">05</span></div>
+            <h3>LangChain Structured Outputs</h3><p>Experiments with structured responses and typed output patterns for LLM applications.</p>
+            <div class="project-tags"><span>Python</span><span>LangChain</span><span>Pydantic</span></div>
+            <a class="project-link" href="https://github.com/Abdullahthefirst/LangChain_Structured_Output" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a>
+          </article>
+          <article class="project-card" data-category="ai">
+            <div class="project-top"><span class="project-type">RETRIEVAL-AUGMENTED AI</span><span class="project-index">06</span></div>
+            <h3>Production Line Manager RAG Bot</h3><p>A prototype exploring retrieval-augmented question answering for factory operations.</p>
+            <div class="project-tags"><span>Python</span><span>RAG</span><span>FAISS</span><span>Gemini</span></div>
+            <a class="project-link" href="https://github.com/Abdullahthefirst/PRODUCTION_LINE_MANAGER_RAG_BOT" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a>
+          </article>
+          <article class="project-card" data-category="software">
+            <div class="project-top"><span class="project-type">OPERATIONS SOFTWARE</span><span class="project-index">07</span></div>
+            <h3>Nuclear Medicine Manager</h3><p>A multi-site inventory and operations management project, presented at the PakAngels Agentic AI Hackathon.</p>
+            <div class="project-tags"><span>Python</span><span>Streamlit</span><span>Supabase</span></div>
+            <a class="project-link" href="https://github.com/Abdullahthefirst/MEDICINE_MANGER_V1_1" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a>
+          </article>
+          <article class="project-card" data-category="software">
+            <div class="project-top"><span class="project-type">INDUSTRIAL SOFTWARE</span><span class="project-index">08</span></div>
+            <h3>Factory Operations Manager</h3><p>A factory operations management application focused on production, inventory, and operational visibility.</p>
+            <div class="project-tags"><span>Python</span><span>Streamlit</span><span>Supabase</span></div>
+            <a class="project-link" href="https://github.com/Abdullahthefirst/FACTORY_MANGER_V2" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a>
+          </article>
+          <article class="project-card" data-category="web">
+            <div class="project-top"><span class="project-type">WEB DEVELOPMENT</span><span class="project-index">09</span></div>
+            <h3>E-commerce Platform</h3><p>A web development repository exploring the structure and implementation of an e-commerce application.</p>
+            <div class="project-tags"><span>Web</span><span>JavaScript</span><span>Frontend</span></div>
+            <a class="project-link" href="https://github.com/Abdullahthefirst/ecommerce-platform" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a>
+          </article>
+        </div>
+        <details class="repo-directory">
+          <summary>Browse all 24 public repositories <span aria-hidden="true">＋</span></summary>
+          <div class="repo-list">
+            <a href="https://github.com/Abdullahthefirst/abdullahthefirst.github.io" target="_blank" rel="noopener noreferrer">abdullahthefirst.github.io <span>HTML</span></a>
+            <a href="https://github.com/Abdullahthefirst/Sigma_Web_Dev" target="_blank" rel="noopener noreferrer">Sigma_Web_Dev <span>HTML</span></a>
+            <a href="https://github.com/Abdullahthefirst/ecommerce-platform" target="_blank" rel="noopener noreferrer">ecommerce-platform <span>Web</span></a>
+            <a href="https://github.com/Abdullahthefirst/Django" target="_blank" rel="noopener noreferrer">Django <span>Python</span></a>
+            <a href="https://github.com/Abdullahthefirst/LangChain_Chains" target="_blank" rel="noopener noreferrer">LangChain_Chains <span>Python</span></a>
+            <a href="https://github.com/Abdullahthefirst/LangChain_Output_Parsers" target="_blank" rel="noopener noreferrer">LangChain_Output_Parsers <span>Python</span></a>
+            <a href="https://github.com/Abdullahthefirst/LangChain_Structured_Output" target="_blank" rel="noopener noreferrer">LangChain_Structured_Output <span>Python</span></a>
+            <a href="https://github.com/Abdullahthefirst/Pydantic" target="_blank" rel="noopener noreferrer">Pydantic <span>Python</span></a>
+            <a href="https://github.com/Abdullahthefirst/langChain_prompts" target="_blank" rel="noopener noreferrer">langChain_prompts <span>Python</span></a>
+            <a href="https://github.com/Abdullahthefirst/Abdullahthefirst" target="_blank" rel="noopener noreferrer">Abdullahthefirst <span>Repository</span></a>
+            <a href="https://github.com/Abdullahthefirst/streamlit_tutorial" target="_blank" rel="noopener noreferrer">streamlit_tutorial <span>Python</span></a>
+            <a href="https://github.com/Abdullahthefirst/LangChain_models" target="_blank" rel="noopener noreferrer">LangChain_models <span>Python</span></a>
+            <a href="https://github.com/Abdullahthefirst/EDA_Practice" target="_blank" rel="noopener noreferrer">EDA_Practice <span>HTML</span></a>
+            <a href="https://github.com/Abdullahthefirst/DATA_ANALYST_JOBS_ANALYSIS" target="_blank" rel="noopener noreferrer">DATA_ANALYST_JOBS_ANALYSIS <span>Jupyter Notebook</span></a>
+            <a href="https://github.com/Abdullahthefirst/MEDICINE_MANGER_V1_1" target="_blank" rel="noopener noreferrer">MEDICINE_MANGER_V1_1 <span>Python</span></a>
+            <a href="https://github.com/Abdullahthefirst/MEDICINE_MANGER" target="_blank" rel="noopener noreferrer">MEDICINE_MANGER <span>Python</span></a>
+            <a href="https://github.com/Abdullahthefirst/FACTORY_MANGER_V2" target="_blank" rel="noopener noreferrer">FACTORY_MANGER_V2 <span>Python</span></a>
+            <a href="https://github.com/Abdullahthefirst/PRODUCTION_LINE_MANAGER_RAG_BOT" target="_blank" rel="noopener noreferrer">PRODUCTION_LINE_MANAGER_RAG_BOT <span>Python</span></a>
+            <a href="https://github.com/Abdullahthefirst/AI_RECIPIE_GENERATOR" target="_blank" rel="noopener noreferrer">AI_RECIPIE_GENERATOR <span>Python</span></a>
+            <a href="https://github.com/Abdullahthefirst/BASIC_CHAT_BOT" target="_blank" rel="noopener noreferrer">BASIC_CHAT_BOT <span>Repository</span></a>
+            <a href="https://github.com/Abdullahthefirst/JOB_APPLICATION_TRACKER" target="_blank" rel="noopener noreferrer">JOB_APPLICATION_TRACKER <span>Python</span></a>
+            <a href="https://github.com/Abdullahthefirst/git-hub-final-project" target="_blank" rel="noopener noreferrer">git-hub-final-project <span>Shell</span></a>
+            <a href="https://github.com/Abdullahthefirst/gitPractice" target="_blank" rel="noopener noreferrer">gitPractice <span>Python</span></a>
+            <a href="https://github.com/Abdullahthefirst/NOTSUREFORNAME" target="_blank" rel="noopener noreferrer">NOTSUREFORNAME <span>Repository</span></a>
+          </div>
+        </details>
+        <div class="all-repos-wrap"><a class="button button-secondary" href="https://github.com/Abdullahthefirst?tab=repositories" target="_blank" rel="noopener noreferrer">Open GitHub profile <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section container" id="education">
+      <p class="eyebrow">04 / EDUCATION & EXPERIENCE</p>
+      <div class="section-heading"><h2 class="section-title">Learning with <span class="muted-text">purpose.</span></h2></div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-date">CURRENT · 2ND SEMESTER</div>
+          <div class="timeline-content"><h3>BSc Artificial Intelligence</h3><p class="timeline-place">University of Engineering and Technology (UET), Lahore</p><p>Building foundations in artificial intelligence, programming, mathematics, and software engineering.</p><div class="achievement-pill">Current CGPA: 4.00 / 4.00</div></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-date">HACKATHON PARTICIPATION</div>
+          <div class="timeline-content"><h3>PakAngels Agentic AI Hackathon</h3><p class="timeline-place">Project: Nuclear Medicine Manager</p><p>Participated with a project focused on applying software and AI-oriented thinking to nuclear medicine operations.</p></div>
+        </article>
+      </div>
+      <div class="coursework">
+        <h3>Academic foundations</h3>
+        <div class="tags"><span>Object-Oriented Programming</span><span>Discrete Mathematics</span><span>Linear Algebra</span><span>Calculus</span><span>Multivariable Calculus</span><span>Software Engineering</span><span>Applied Physics</span></div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="certifications">
+      <div class="container">
+        <p class="eyebrow">05 / CONTINUOUS LEARNING</p>
+        <div class="section-heading"><h2 class="section-title">Courses & <span class="muted-text">certifications.</span></h2><p class="section-intro">Selected courses completed across programming, mathematics, data, and development tools. Verification links can be added later.</p></div>
+        <div class="cert-grid">
+          <article class="cert-card"><span class="cert-provider">META · SEP 2026</span><h3>Database Structures and Management with MySQL</h3><p>SQL</p><span class="credential">Credential ID: VNNCLH32QKI4</span></article>
+          <article class="cert-card"><span class="cert-provider">DEEPLEARNING.AI · AUG 2026</span><h3>Probability & Statistics for Machine Learning & Data Science</h3><p>Statistics · Probability</p><span class="credential">Credential ID: Z7Z1H99Q8RGU</span></article>
+          <article class="cert-card"><span class="cert-provider">EDUREKA · AUG 2026</span><h3>Introduction to Linux</h3><p>Linux</p><span class="credential">Credential ID: 3CU2809G0XN5</span></article>
+          <article class="cert-card"><span class="cert-provider">COURSERA · AUG 2026</span><h3>Git and GitHub Essentials</h3><p>Git · GitHub</p><span class="credential">Verification link to be added</span></article>
+          <article class="cert-card"><span class="cert-provider">IBM · AUG 2026</span><h3>Getting Started with Git and GitHub</h3><p>Git · GitHub</p><span class="credential">Credential ID: UHFRPAR09ZW4</span></article>
+          <article class="cert-card"><span class="cert-provider">UNIVERSITY OF MICHIGAN · AUG 2026</span><h3>Python Data Structures</h3><p>Python · NumPy</p><span class="credential">Credential ID: NUWW4LJRQ1JI</span></article>
+          <article class="cert-card"><span class="cert-provider">UNIVERSITY OF MICHIGAN · AUG 2026</span><h3>Programming for Everybody (Getting Started with Python)</h3><p>Python · Object-Oriented Programming</p><span class="credential">Credential ID: EWL7JOW4KCS4</span></article>
+          <article class="cert-card"><span class="cert-provider">DEEPLEARNING.AI · JUL 2026</span><h3>Calculus for Machine Learning and Data Science</h3><p>Calculus</p><span class="credential">Credential ID: K8NH3CMVD6WL</span></article>
+          <article class="cert-card"><span class="cert-provider">DEEPLEARNING.AI · JUN 2026</span><h3>Linear Algebra for Machine Learning and Data Science</h3><p>Linear Algebra</p><span class="credential">Credential ID: 9S53F96PWPE1</span></article>
+          <article class="cert-card"><span class="cert-provider">COURSERA · MAR 2026</span><h3>Getting Started with Microsoft Excel</h3><p>Microsoft Excel</p><span class="credential">Credential ID: 1BLB9DTCZTQO</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container contact-section" id="contact">
+      <p class="eyebrow">06 / GET IN TOUCH</p>
+      <div class="contact-panel">
+        <div><h2>Have an idea?<br><span class="gradient-text">Let's connect.</span></h2><p>I'm open to conversations about AI, software projects, learning opportunities, and collaboration.</p></div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:abdullahwasavailable@gmail.com">abdullahwasavailable@gmail.com <span>↗</span></a>
+          <a class="text-link" href="https://github.com/Abdullahthefirst" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a>
+          <a class="text-link" href="https://linkedin.com/in/abdullahthefirst" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">MA</span><span>abdullah<span class="brand-dot">.</span></span></a><p>Designed and built with curiosity by Muhammad Abdullah.</p><span class="copyright">© <span id="year"></span> Muhammad Abdullah</span></div>
   </footer>
-
 </body>
 </html>
