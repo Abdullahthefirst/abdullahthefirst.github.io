@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Muhammad Abdullah, Electrical Engineering student at UET Lahore.">
+  <title>Muhammad Abdullah | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header, section { max-width: 900px; margin: 0 auto; padding: 4rem 1.5rem; }
+    nav {
+      position: sticky; top: 0; background: var(--bg);
+      border-bottom: 1px solid var(--surface);
+      display: flex; justify-content: center; gap: 1.5rem; padding: 1rem;
+      z-index: 10;
+    }
+    nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+    nav a:hover { color: var(--accent); }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.6rem; margin-bottom: 1.5rem; color: var(--accent); }
+    .subtitle { color: var(--muted); font-size: 1.15rem; }
+    .card {
+      background: var(--surface);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .card h3 { margin-bottom: 0.4rem; }
+    .card p { color: var(--muted); }
+    .tags { margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .tags span {
+      font-size: 0.8rem; padding: 0.2rem 0.6rem;
+      border: 1px solid var(--accent); border-radius: 999px; color: var(--accent);
+    }
+    .skills { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .skills span {
+      background: var(--surface); padding: 0.4rem 0.9rem; border-radius: 6px; font-size: 0.9rem;
+    }
+    a.link { color: var(--accent); }
+    footer {
+      text-align: center; padding: 2rem; color: var(--muted);
+      border-top: 1px solid var(--surface); font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      nav { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="top">
+    <h1>Muhammad Abdullah</h1>
+    <p class="subtitle">Electrical Engineering Student | University of Engineering and Technology (UET), Lahore</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an Electrical Engineering student at UET Lahore. I enjoy building things that
+      combine hardware and software, and I am currently strengthening my skills in
+      object-oriented programming and artificial intelligence. Replace this paragraph with
+      a short description of your interests and goals.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>C++</span>
+      <span>Object-Oriented Programming</span>
+      <span>Python</span>
+      <span>Git and GitHub</span>
+      <span>HTML / CSS / JavaScript</span>
+      <span>Circuit Analysis</span>
+      <!-- Add or remove skills here -->
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Project Title One</h3>
+      <p>
+        Brief description of what the project does, the problem it solves, and your role in it.
+        Replace this with a real project.
+      </p>
+      <div class="tags">
+        <span>C++</span>
+        <span>OOP</span>
+      </div>
+      <p style="margin-top: 0.75rem;">
+        <a class="link" href="#" target="_blank" rel="noopener">View on GitHub</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Project Title Two</h3>
+      <p>
+        Brief description of a second project. Mention the tools used and any results or outcomes.
+      </p>
+      <div class="tags">
+        <span>Python</span>
+        <span>Electronics</span>
+      </div>
+      <p style="margin-top: 0.75rem;">
+        <a class="link" href="#" target="_blank" rel="noopener">View on GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      I am open to internships, collaborations, and conversations about engineering and technology.
+    </p>
+    <p style="margin-top: 1rem;">
+      Email: <a class="link" href="mailto:your.email@example.com">your.email@example.com</a><br>
+      GitHub: <a class="link" href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a><br>
+      LinkedIn: <a class="link" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin.com/in/yourusername</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Muhammad Abdullah. Built with HTML and CSS.</p>
+  </footer>
+
+</body>
+</html>
